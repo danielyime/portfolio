@@ -67,9 +67,7 @@ const Portfolio = () => {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-12 text-gray-900">About Me</h2>
           <p className="text-xl text-gray-600">
-            Well I have two cats, Teddy and Momo. If you know me you probably know
-            my cats better than myself. This section will eventually have a bit of a
-            bio, background, etc.
+            Well I have two cats, Teddy and Momo. This is a placeholder for now.
           </p>
         </div>
       </section>
