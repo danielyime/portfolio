@@ -20,7 +20,7 @@ const Portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-4 relative">
+      <section id="welcome-section" className="min-h-screen flex flex-col justify-center items-center px-4 relative">
         <div className="max-w-3xl text-center space-y-6">
           <h1 className="text-6xl font-bold bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent">
             Daniel Yi
@@ -29,7 +29,7 @@ const Portfolio = () => {
             Product Manager. Experience Designer.
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Welcome! I've been self-learning HTML/CSS/JS and am using this site to
+            Hi! I've been learning HTML/CSS/JS to strengthen my technical knowledge. I'm using this site to
             experiment and apply what I have been learning.
           </p>
         </div>
@@ -41,9 +41,9 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">My Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Product Design Study", image: "/api/placeholder/400/300" },
-              { title: "UX Research Case", image: "/api/placeholder/400/300" },
-              { title: "Web Development", image: "/api/placeholder/400/300" }
+              { title: "Project 1", image: "/api/placeholder/400/300" },
+              { title: "Project 2", image: "/api/placeholder/400/300" },
+              { title: "Project 3", image: "/api/placeholder/400/300" }
             ].map((project, index) => (
               <div key={index} className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 <img 
