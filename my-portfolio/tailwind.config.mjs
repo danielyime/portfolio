@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-import tailwindcssAnimated from 'tailwindcss-animated'
-import tailwindcssIntersect from 'tailwindcss-intersect'
+const tailwindcssAnimated = require('tailwindcss-animated');
+const tailwindcssIntersect = require('tailwindcss-intersect');
 
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",

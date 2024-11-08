@@ -1,9 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Portfolio = () => {
-  const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -59,6 +58,11 @@ const Portfolio = () => {
               </div>
             ))}
           </div>
+          <Link to="/Projects" className="px-4 py-4 mx-aut block text-center mt-8">
+            <div className="inline-block bg-orange-500 text-white font-bold px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors ">
+              View All
+            </div>
+          </Link>
         </div>
       </section>
 
