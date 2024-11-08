@@ -58,8 +58,8 @@ const Portfolio = () => {
               </div>
             ))}
           </div>
-          <Link to="/Projects" className="px-4 py-4 mx-aut block text-center mt-8">
-            <div className="inline-block bg-orange-500 text-white font-bold px-6 py-2 rounded-lg hover:bg-orange-600 transition-colors ">
+          <Link to="/Projects" className="px-4 py-4 mx-auto block text-center mt-8 ">
+            <div className="inline-block shadow hover:shadow-lg bg-orange-500 text-white font-bold px-6 py-2 rounded-lg hover:bg-pink-600 transition-colors transiton-shadows">
               View All
             </div>
           </Link>
