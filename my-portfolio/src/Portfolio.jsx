@@ -10,11 +10,11 @@ const Portfolio = () => {
       {/* Navbar */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="#welcome-section" className="text-2xl font-bold text-gray-900">DY</a>
+          <a href="#welcome-section" className="text-2xl font-bold text-gray-900 hover:animate-pulse">DY</a>
           <div className="flex gap-8">
-            <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
-            <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
-            <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+            <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Projects</a>
+            <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">About</a>
+            <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Contact</a>
           </div>
         </div>
       </nav>
