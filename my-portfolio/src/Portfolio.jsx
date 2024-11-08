@@ -20,7 +20,7 @@ const Portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="welcome-section" className="min-h-screen flex flex-col justify-center items-center px-4 relative animate-fade-down animate-duration-[3000ms]">
+      <section id="welcome-section" className="min-h-screen flex flex-col justify-center items-center px-4 relative animate-fade-down animate-duration-[2000ms]">
         <div className="max-w-3xl text-center space-y-6">
           <h1 className="text-6xl font-bold bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent ">
             Daniel Yi
@@ -37,7 +37,7 @@ const Portfolio = () => {
 
       {/* Projects Section */}
       <section id="projects" className="py-24 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4 opacity-0 intersect-once intersect:animate-fade animate-duration-[3000ms]">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">My Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
