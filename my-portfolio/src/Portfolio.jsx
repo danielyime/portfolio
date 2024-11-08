@@ -10,7 +10,7 @@ const Portfolio = () => {
       {/* Navbar */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="#welcome-section" className="text-2xl font-bold text-gray-900 hover:animate-pulse">DY</a>
+          <a href="#welcome-section" className="text-2xl font-bold text-white hover:animate-wiggle animate-infinite bg-gradient-to-r from-orange-400 to-pink-600 rounded-xl p-2">DY</a>
           <div className="flex gap-8">
             <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Projects</a>
             <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">About</a>
@@ -20,9 +20,9 @@ const Portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="welcome-section" className="min-h-screen flex flex-col justify-center items-center px-4 relative">
+      <section id="welcome-section" className="min-h-screen flex flex-col justify-center items-center px-4 relative animate-fade-down animate-duration-[3000ms]">
         <div className="max-w-3xl text-center space-y-6">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl font-bold bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent ">
             Daniel Yi
           </h1>
           <h2 className="text-3xl text-gray-700 font-light">
