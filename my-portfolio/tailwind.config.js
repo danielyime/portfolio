@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindcssAnimated from 'tailwindcss-animated'
+import tailwindcssIntersect from 'tailwindcss-intersect'
+
 export default {
   content: [
     "./index.html",
@@ -8,8 +11,7 @@ export default {
     extend: {},
   },
   plugins: [
-    /*require('tailwindcss-animate'),*/
-    require('tailwindcss-animated'),
-    require('tailwindcss-intersect')
+    tailwindcssAnimated,
+    tailwindcssIntersect
   ],
 }
