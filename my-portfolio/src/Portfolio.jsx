@@ -81,12 +81,14 @@ const Portfolio = () => {
               href="https://www.linkedin.com/in/danielyidyw/" 
               target="_blank"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
+              aria-label="View LinkedIn Profile"
             >
               <i className="fab fa-linkedin"></i>
             </a>
             <a 
               href="mailto:mail@danielyi.me"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
+              aria-label="Send Email"
             >
               <i className="fas fa-envelope"></i>
             </a>
@@ -94,6 +96,7 @@ const Portfolio = () => {
               href="https://www.freecodecamp.org/fcc695deeec-2aa5-4c34-a06f-94702746b2a0"
               target="_blank"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
+              aria-label="View Freecodecamp profile"
             >
               <i className="fab fa-free-code-camp"></i>
             </a>
