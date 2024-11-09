@@ -19,7 +19,7 @@ const Projects = () => {
       </nav> 
 
       {/* Main Content */}
-        <div className="max-w-4xl mx-auto pt-16 flex flex-col gap-24">
+        <div className="max-w-4xl mx-auto pt-16 flex flex-col gap-8">
           {/* Intro Section */}
           <section id="introduction" className="bg-gradient-to-br from-orange-400 to-pink-600 rounded-xl p-8 text-white shadow-lg">
             <h2 className="text-2xl font-semibold mb-4">About my work</h2>
