@@ -51,7 +51,7 @@ const Portfolio = () => {
               >
                 <img 
                   src={project.image} 
-                  alt={project.title}
+                  alt={`Preview of ${project.title}`}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
