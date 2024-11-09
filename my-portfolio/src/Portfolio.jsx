@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 
 
 const Portfolio = () => {
-
+  const projects = [
+    { title: "Project 1", image: "/api/placeholder/400/300", id: "project1" },
+    { title: "Project 2", image: "/api/placeholder/400/300", id: "project2" },
+    { title: "Project 3", image: "/api/placeholder/400/300", id: "project3" }
+  ];
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
@@ -39,12 +43,12 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 opacity-0 intersect-once intersect:animate-fade animate-duration-[3000ms]">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">My Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { title: "Project 1", image: "/api/placeholder/400/300" },
-              { title: "Project 2", image: "/api/placeholder/400/300" },
-              { title: "Project 3", image: "/api/placeholder/400/300" }
-            ].map((project, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
+            {projects.map((project, index) => (
+              <Link
+              to={`/projects#${project.id}`} 
+              key={index} 
+              className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 <img 
                   src={project.image} 
                   alt={project.title}
@@ -55,7 +59,7 @@ const Portfolio = () => {
                     {project.title}
                   </h3>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <Link to="/Projects" className="px-4 py-4 mx-auto block text-center mt-8 ">

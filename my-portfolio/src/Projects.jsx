@@ -21,8 +21,8 @@ const Projects = () => {
       </nav> 
 
       {/* Main Content */}
-      <main className="pt-24 px-4">
-        <div className="max-w-4xl mx-auto">
+      <main className="px-4">
+        <div className="max-w-4xl mx-auto pt-16">
           <h1 className="text-4xl font-bold text-white mb-6">My Projects</h1>
 
 
@@ -40,14 +40,68 @@ const Projects = () => {
           </section>
 
           {/* Content Section */}
-          <section className="bg-white rounded-xl shadow-lg p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Section Heading</h2>
+          <div className="space-y-24">
+            <section className="bg-white rounded-xl shadow-lg p-8 m-4" id="project1" >
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4" >Project 1</h2>
             <p className="text-gray-600 mb-4">
               Work info
             </p>
           </section>
 
-          
+          <section className="bg-white rounded-xl shadow-lg p-8 m-4" id="project2">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Project 2</h2>
+            <p className="text-gray-600 mb-4">
+              Work info
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+          </section>
+
+          <section className="bg-white rounded-xl shadow-lg p-8 m-4" id="project3">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Project 3</h2>
+            <p className="text-gray-600 mb-4">
+              Work info
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+            <p className="text-white">
+              I started my career at a small tech startup working in customer support. I became close with the product team, 
+              highlighting pain-points and advocating for our users. 
+            </p>
+          </section>
+          </div>
         </div>
       </main>
     </div>
