@@ -13,6 +13,7 @@ const Portfolio = () => {
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <HashLink to="#welcome-section" className="text-2xl font-bold text-white hover:animate-wiggle animate-infinite bg-gradient-to-r from-orange-400 to-pink-600 rounded-xl p-2">DY</HashLink>
+          <HashLink to="#welcome-section" className="text-2xl font-bold text-white hover:animate-wiggle animate-infinite bg-gradient-to-r from-orange-400 to-pink-600 rounded-xl p-2">DY</HashLink>
           <div className="flex gap-8">
             <HashLink smooth to="#projects" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Projects</HashLink>
             <HashLink smooth to="#about" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">About</HashLink>
@@ -68,7 +69,9 @@ const Portfolio = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <HashLink
+              <HashLink
               to={`/projects#${project.id}`} 
+
 
               key={index} 
               className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300"
@@ -84,12 +87,15 @@ const Portfolio = () => {
                   </h3>
                 </div>
               </HashLink>
+              </HashLink>
             ))}
           </div>
+          <HashLink to="/Projects#top" className="px-4 py-4 mx-auto block text-center mt-8 ">
           <HashLink to="/Projects#top" className="px-4 py-4 mx-auto block text-center mt-8 ">
             <div className="inline-block shadow hover:shadow-lg bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-2 rounded-lg transition-colors transiton-shadows">
               View All
             </div>
+          </HashLink>
           </HashLink>
         </div>
       </section>
@@ -111,13 +117,17 @@ const Portfolio = () => {
           <div className="flex justify-center gap-8">
             <HashLink 
               to="https://www.linkedin.com/in/danielyidyw/" 
+            <HashLink 
+              to="https://www.linkedin.com/in/danielyidyw/" 
               target="_blank"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
               aria-label="View LinkedIn Profile"
             >
               <i className="fab fa-linkedin"></i>
             </HashLink>
+            </HashLink>
             <a 
+              hreff="mailto:mail@danielyi.me"
               hreff="mailto:mail@danielyi.me"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
               aria-label="Send Email"
@@ -126,11 +136,14 @@ const Portfolio = () => {
             </a>
             <HashLink 
               to="https://www.freecodecamp.org/fcc695deeec-2aa5-4c34-a06f-94702746b2a0"
+            <HashLink 
+              to="https://www.freecodecamp.org/fcc695deeec-2aa5-4c34-a06f-94702746b2a0"
               target="_blank"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
               aria-label="View Freecodecamp profile"
             >
               <i className="fab fa-free-code-camp"></i>
+            </HashLink>
             </HashLink>
           </div>
         </div>
