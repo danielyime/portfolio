@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 
 
 const Portfolio = () => {
@@ -13,11 +14,11 @@ const Portfolio = () => {
       {/* Navbar */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="#welcome-section" className="text-2xl font-bold text-white hover:animate-wiggle animate-infinite bg-gradient-to-r from-orange-400 to-pink-600 rounded-xl p-2">DY</a>
+          <HashLink to="#welcome-section" className="text-2xl font-bold text-white hover:animate-wiggle animate-infinite bg-gradient-to-r from-orange-400 to-pink-600 rounded-xl p-2">DY</HashLink>
           <div className="flex gap-8">
-            <a href="#projects" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Projects</a>
-            <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">About</a>
-            <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Contact</a>
+            <HashLink to="#projects" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Projects</HashLink>
+            <HashLink to="#about" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">About</HashLink>
+            <HashLink to="#contact" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Contact</HashLink>
           </div>
         </div>
       </nav>
@@ -44,8 +45,9 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">My Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <Link
+              <HashLink
               to={`/projects#${project.id}`} 
+
               key={index} 
               className="group relative overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300"
               >
@@ -59,14 +61,14 @@ const Portfolio = () => {
                     {project.title}
                   </h3>
                 </div>
-              </Link>
+              </HashLink>
             ))}
           </div>
-          <Link to="/Projects" className="px-4 py-4 mx-auto block text-center mt-8 ">
+          <HashLink to="/Projects#top" className="px-4 py-4 mx-auto block text-center mt-8 ">
             <div className="inline-block shadow hover:shadow-lg bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-2 rounded-lg transition-colors transiton-shadows">
               View All
             </div>
-          </Link>
+          </HashLink>
         </div>
       </section>
 
@@ -85,29 +87,29 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-12 text-white">Let's Connect</h2>
           <div className="flex justify-center gap-8">
-            <a 
-              href="https://www.linkedin.com/in/danielyidyw/" 
+            <HashLink 
+              to="https://www.linkedin.com/in/danielyidyw/" 
               target="_blank"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
               aria-label="View LinkedIn Profile"
             >
               <i className="fab fa-linkedin"></i>
-            </a>
+            </HashLink>
             <a 
-              href="mailto:mail@danielyi.me"
+              hreff="mailto:mail@danielyi.me"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
               aria-label="Send Email"
             >
               <i className="fas fa-envelope"></i>
             </a>
-            <a 
-              href="https://www.freecodecamp.org/fcc695deeec-2aa5-4c34-a06f-94702746b2a0"
+            <HashLink 
+              to="https://www.freecodecamp.org/fcc695deeec-2aa5-4c34-a06f-94702746b2a0"
               target="_blank"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
               aria-label="View Freecodecamp profile"
             >
               <i className="fab fa-free-code-camp"></i>
-            </a>
+            </HashLink>
           </div>
         </div>
       </section>
