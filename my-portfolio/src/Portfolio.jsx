@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   const projects = [
-    { title: "Project 1", image: "/api/placeholder/400/300", id: "project1" },
-    { title: "Project 2", image: "/api/placeholder/400/300", id: "project2" },
-    { title: "Project 3", image: "/api/placeholder/400/300", id: "project3" }
+    { title: "Project 1", image: "/imgs/P1010732.jpg", id: "project1" },
+    { title: "Project 2", image: "/imgs/P1010732.jpg", id: "project2" },
+    { title: "Project 3", image: "/imgs/P1010732.jpg", id: "project3" }
   ];
   return (
     <div className="min-h-screen bg-white">
