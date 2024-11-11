@@ -1,8 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-
-
 const Portfolio = () => {
   const projects = [
     { title: "Project 1", image: "/imgs/P1010732.jpg", id: "project1" },
