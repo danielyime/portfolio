@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { useState,useEffect } from'react';
+import { useState,useEffect } from 'react';
 
 function Budget() {
   const [transactions, setTransactions] = useState([
@@ -21,6 +21,9 @@ function Budget() {
         console.error('API Error:', error);
       }
     };
+
+    testApi();
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
