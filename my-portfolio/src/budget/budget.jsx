@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { useState } from'react';
+import { useState,useEffect } from'react';
 
 function Budget() {
   const [transactions, setTransactions] = useState([
@@ -10,6 +10,17 @@ function Budget() {
   ]);
   const [monthlyBudget, setMonthlyBudget] = useState({});
   const currentBalance = transactions.reduce((sum, transaction) => sum + transaction.amount, 0);
+
+  useEffect(() => {
+    const testApi = async () => {
+      try {
+        const response = await fetch('/api/hello');
+        const data = await response.json();
+        console.log('API Response:', data);
+      } catch (error) {
+        console.error('API Error:', error);
+      }
+    };
 
   return (
     <div className="min-h-screen bg-gray-50">
