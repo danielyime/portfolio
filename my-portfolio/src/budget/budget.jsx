@@ -1,10 +1,19 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { useState } from'react';
 
 function Budget() {
+  const [transactions, setTransactions] = useState([
+    { id: 1, amount: 1000.34, description:"Salary", date: "2024-03-01" },
+    { id: 2, amount: -50.25, description: "Groceries", date: "2024-03-02" },
+    {id: 3, amount: -30.50, description: "Gas", date: "2024-03-03 "}
+  ]);
+  const [monthlyBudget, setMonthlyBudget] = useState({});
+  const currentBalance = transactions.reduce((sum, transaction) => sum + transaction.amount, 0);
+
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navbar - matching your portfolio style */}
+      {/* Navbar */}
       <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <HashLink to="/" className="text-2xl font-bold text-white hover:animate-wiggle animate-infinite bg-gradient-to-r from-orange-400 to-pink-600 rounded-xl p-2">
@@ -30,25 +39,42 @@ function Budget() {
           </div>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="flex flex-wrap gap-6">
             {/* Balance Card */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="flex-1 min-w-3 bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="bg-gradient-to-r from-orange-400 to-pink-600 p-1">
                 <div className="bg-white p-6">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">Current Balance</h2>
-                  <p className="text-3xl font-bold text-gray-900">$0.00</p>
+                  <p className="text-3xl font-bold text-gray-900">
+                    ${currentBalance.toFixed(2)}
+                  </p>
                   <p className="text-sm text-gray-500 mt-2">Updated just now</p>
                 </div>
               </div>
             </div>
 
             {/* Recent Transactions */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="flex-1 min-w-3 bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="bg-gradient-to-r from-orange-400 to-pink-600 p-1">
                 <div className="bg-white p-6">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">Recent Transactions</h2>
                   <div className="space-y-4">
-                    <p className="text-gray-500">No transactions yet</p>
+                    {transactions.length === 0 ? (
+                      <p className="text-gray-500">No transactions yet</p>
+                    ) : (
+                      <div className="space-y-4">
+                        {transactions.map(transaction => (
+                          <div key={transaction.id} className="flex justify-between">
+                            <span>{transaction.description}</span>
+                            <span 
+                            className={`${transaction.amount >= 0 ? 'text-green-600' : 'text-red-600' } font-medium`}>
+                                ${Math.abs(transaction.amount.toFixed(2))}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    
                     <button className="text-sm text-orange-500 hover:text-orange-600 font-medium">
                       Add Transaction +
                     </button>
@@ -58,7 +84,7 @@ function Budget() {
             </div>
 
             {/* Budget Overview */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="flex-1 min-w-3 bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="bg-gradient-to-r from-orange-400 to-pink-600 p-1">
                 <div className="bg-white p-6">
                   <h2 className="text-xl font-semibold text-gray-800 mb-4">Budget Overview</h2>
