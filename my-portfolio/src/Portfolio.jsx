@@ -1,8 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-
-
 const Portfolio = () => {
   const projects = [
     { title: "Project 1", image: "/imgs/P1010732.jpg", id: "project1" },
@@ -16,9 +14,9 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <HashLink to="#welcome-section" className="text-2xl font-bold text-white hover:animate-wiggle animate-infinite bg-gradient-to-r from-orange-400 to-pink-600 rounded-xl p-2">DY</HashLink>
           <div className="flex gap-8">
-            <HashLink to="#projects" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Projects</HashLink>
-            <HashLink to="#about" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">About</HashLink>
-            <HashLink to="#contact" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Contact</HashLink>
+            <HashLink smooth to="#projects" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Projects</HashLink>
+            <HashLink smooth to="#about" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">About</HashLink>
+            <HashLink smooth to="#contact" className="text-gray-600 hover:text-gray-900 transition-colors hover:underline font-bold">Contact</HashLink>
           </div>
         </div>
       </nav>
@@ -36,7 +34,31 @@ const Portfolio = () => {
             Hi! I've been learning HTML/CSS/JS to strengthen my technical knowledge. I'm using this site to
             experiment and apply what I have been learning.
           </p>
+
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Most of my experience is split between Product Management, Product Design, and User Support.
+          </p>
         </div>
+        <HashLink to="#projects" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 
+            bg-orange-500 hover:bg-orange-600 text-white 
+            rounded-full p-3 shadow-lg hover:shadow-xl 
+            transition-all duration-300 group animate-bounce group-hover:animate-none">Continue
+            </HashLink>
+        
+        {/* <HashLink 
+          to="#projects"
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 
+            bg-orange-500 hover:bg-orange-600 text-white 
+            rounded-full p-3 shadow-lg hover:shadow-xl 
+            transition-all duration-300 group"
+          aria-label="Scroll to Projects"
+        >
+          <ChevronDownIcon 
+            className="w-8 h-8 animate-bounce group-hover:animate-none" 
+            strokeWidth={3}
+          />
+        </HashLink> */}
+
       </section>
 
       {/* Projects Section */}
