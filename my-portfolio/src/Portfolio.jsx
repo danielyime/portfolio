@@ -1,5 +1,7 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
+import TypingHeader from './components/TypingHeader';
+
 
 const Portfolio = () => {
   const projects = [
@@ -24,9 +26,10 @@ const Portfolio = () => {
       {/* Hero Section */}
       <section id="welcome-section" className="min-h-screen flex flex-col justify-center items-center px-4 relative animate-fade-down animate-duration-[2000ms]">
         <div className="max-w-3xl text-center space-y-6">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent ">
+          {/* <h1 className="text-6xl font-bold bg-gradient-to-r from-orange-400 to-pink-600 bg-clip-text text-transparent ">
             Daniel Yi
-          </h1>
+          </h1> */}
+          <TypingHeader />
           <h2 className="text-3xl text-gray-700 font-light">
             Product Manager. Experience Designer.
           </h2>
@@ -34,7 +37,7 @@ const Portfolio = () => {
             Hi! I've been learning HTML/CSS/JS to strengthen my technical knowledge. I'm using this site to
             experiment and apply these skills while showcasing my professional experience in product.
           </p>
-          
+
         </div>
         <div className="w-full flex justify-center items-center absolute bottom-10">
           <HashLink 
