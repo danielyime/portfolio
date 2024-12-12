@@ -44,25 +44,11 @@ const Portfolio = () => {
             to="#projects" 
             className="bg-orange-500 hover:bg-orange-600 text-white 
                       rounded-full px-6 py-3 shadow-lg hover:shadow-xl 
-                      transition-all duration-300 animate-bounce"
+                      transition-all"
           >
             Continue
           </HashLink>
         </div>
-        
-        {/* <HashLink 
-          to="#projects"
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 
-            bg-orange-500 hover:bg-orange-600 text-white 
-            rounded-full p-3 shadow-lg hover:shadow-xl 
-            transition-all duration-300 group"
-          aria-label="Scroll to Projects"
-        >
-          <ChevronDownIcon 
-            className="w-8 h-8 animate-bounce group-hover:animate-none" 
-            strokeWidth={3}
-          />
-        </HashLink> */}
 
       </section>
 
