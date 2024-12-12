@@ -32,18 +32,20 @@ const Portfolio = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Hi! I've been learning HTML/CSS/JS to strengthen my technical knowledge. I'm using this site to
-            experiment and apply what I have been learning.
+            experiment and apply these skills while showcasing my professional experience in product.
           </p>
-
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Most of my experience is split between Product Management, Product Design, and User Support.
-          </p>
+          
         </div>
-        <HashLink to="#projects" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 
-            bg-orange-500 hover:bg-orange-600 text-white 
-            rounded-full p-3 shadow-lg hover:shadow-xl 
-            transition-all duration-300 group animate-bounce group-hover:animate-none">Continue
-            </HashLink>
+        <div className="w-full flex justify-center items-center absolute bottom-10">
+          <HashLink 
+            to="#projects" 
+            className="bg-orange-500 hover:bg-orange-600 text-white 
+                      rounded-full px-6 py-3 shadow-lg hover:shadow-xl 
+                      transition-all duration-300 animate-bounce"
+          >
+            Continue
+          </HashLink>
+        </div>
         
         {/* <HashLink 
           to="#projects"
