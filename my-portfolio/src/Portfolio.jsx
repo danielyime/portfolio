@@ -39,16 +39,6 @@ const Portfolio = () => {
           </p>
 
         </div>
-        <div className="w-full flex justify-center items-center absolute bottom-10">
-          <HashLink 
-            to="#projects" 
-            className="bg-orange-500 hover:bg-orange-600 text-white 
-                      rounded-full px-6 py-3 shadow-lg hover:shadow-xl 
-                      transition-all"
-          >
-            Continue
-          </HashLink>
-        </div>
 
       </section>
 
