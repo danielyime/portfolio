@@ -89,7 +89,7 @@ const Portfolio = () => {
       {/* Contact Section */}
       <section id="contact" className="py-24 bg-gradient-to-br from-orange-400 to-pink-600">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-12 text-white">Let's Connect</h2>
+          <h2 className="text-4xl font-bold mb-12 text-white">My Links</h2>
           <div className="flex justify-center gap-8">
             <HashLink 
               to="https://www.linkedin.com/in/danielyidyw/" 
@@ -99,13 +99,6 @@ const Portfolio = () => {
             >
               <i className="fab fa-linkedin"></i>
             </HashLink>
-            <a 
-              hreff="mailto:mail@danielyi.me"
-              className="text-white hover:text-gray-200 transition-colors text-3xl"
-              aria-label="Send Email"
-            >
-              <i className="fas fa-envelope"></i>
-            </a>
             <HashLink 
               to="https://www.freecodecamp.org/fcc695deeec-2aa5-4c34-a06f-94702746b2a0"
               target="_blank"
