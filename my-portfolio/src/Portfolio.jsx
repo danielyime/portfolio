@@ -92,7 +92,7 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold mb-12 text-white">My Links</h2>
           <div className="flex justify-center gap-8">
             <HashLink 
-              to="https://www.linkedin.com/in/danielyidyw/" 
+              to="https://www.linkedin.com/in/danieljyi/" 
               target="_blank"
               className="text-white hover:text-gray-200 transition-colors text-3xl"
               aria-label="View LinkedIn Profile"
