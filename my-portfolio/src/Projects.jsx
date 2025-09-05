@@ -24,12 +24,7 @@ const Projects = () => {
           <section id="introduction" className="bg-gradient-to-br from-orange-400 to-pink-600 rounded-xl p-8 text-white shadow-lg">
             <h2 className="text-2xl font-semibold mb-4">About my work</h2>
             <p className="text-white mb-4">
-              I started my career at a small tech startup working in customer support. I became close with the product team, 
-              highlighting pain-points and advocating for our users. Eventually, I got the opportunity to start sitting in on Product meetings and really 
-            </p>
-            <p className="text-white">
-              I started my career at a small tech startup working in customer support. I became close with the product team, 
-              highlighting pain-points and advocating for our users. 
+              I'm always looking for ways to improve the user experience, think empathetically, and implement accessible solutions throughout all my work. 
             </p>
           </section>
 
@@ -37,36 +32,21 @@ const Projects = () => {
             <section className="bg-white rounded-xl p-8 text-black shadow-lg" id="project1">
                 <h2 className="text-2xl font-semibold mb-4 " >Project 1</h2>
                 <p className="text-gray-600 mb-4">
-                I started my career at a small tech startup working in customer support. I became close with the product team, 
-                highlighting pain-points and advocating for our users. Eventually, I got the opportunity to start sitting in on Product meetings and really 
-                </p>
-                <p className="text-gray-600">
-                I started my career at a small tech startup working in customer support. I became close with the product team, 
-                highlighting pain-points and advocating for our users. 
+                WIP
                 </p>
             </section>
 
             <section className="bg-white rounded-xl p-8 text-black shadow-lg" id="project2">
                 <h2 className="text-2xl font-semibold mb-4">Project 2</h2>
                 <p className="text-gray-600 mb-4">
-                I started my career at a small tech startup working in customer support. I became close with the product team, 
-                highlighting pain-points and advocating for our users. Eventually, I got the opportunity to start sitting in on Product meetings and really 
-                </p>
-                <p className="text-gray-600">
-                I started my career at a small tech startup working in customer support. I became close with the product team, 
-                highlighting pain-points and advocating for our users. 
+                WIP
                 </p>
             </section>
 
             <section className="bg-white rounded-xl p-8 text-black shadow-lg" id="project3">
                 <h2 className="text-2xl font-semibold mb-4">Project 3</h2>
                 <p className="text-gray-600 mb-4">
-                I started my career at a small tech startup working in customer support. I became close with the product team, 
-                highlighting pain-points and advocating for our users. Eventually, I got the opportunity to start sitting in on Product meetings and really 
-                </p>
-                <p className="text-gray-600">
-                I started my career at a small tech startup working in customer support. I became close with the product team, 
-                highlighting pain-points and advocating for our users. 
+                WIP
                 </p>
             </section>
         </div>
