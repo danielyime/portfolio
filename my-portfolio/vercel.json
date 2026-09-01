@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/planner",
+      "destination": "https://wedding-planner-daniels-projects-b9294faf.vercel.app/planner"
+    },
+    {
+      "source": "/planner/:path*",
+      "destination": "https://wedding-planner-daniels-projects-b9294faf.vercel.app/planner/:path*"
+    }
+  ]
+}
