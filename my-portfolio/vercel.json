@@ -9,6 +9,10 @@
     {
       "source": "/planner/:path*",
       "destination": "https://wedding-planner-daniels-projects-b9294faf.vercel.app/planner/:path*"
+    },
+    {
+      "source": "/((?!planner).*)",
+      "destination": "/index.html"
     }
   ]
 }

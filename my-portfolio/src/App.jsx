@@ -1,8 +1,8 @@
 import Portfolio from './Portfolio'
-import Projects from './Projects'
+import Experience from './Experience'
 import { Observer } from 'tailwindcss-intersect';
 import { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -13,7 +13,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Portfolio />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/experience" element={<Experience />} />
+        {/* Old projects route kept as a redirect so existing links don't 404 */}
+        <Route path="/projects" element={<Navigate to="/experience" replace />} />
       </Routes>
     </BrowserRouter>
   )
